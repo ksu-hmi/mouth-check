@@ -1,2 +1,5 @@
 Played around with code and found I have missing imported modules. There are no suggestions, but I did try and run the code by making several changes and I still received errors.
 Here is a screenshot of my errors after I thought I installed pip (like in class) and then tried installing scrappy in order for my code to run, but it did not. These are some of the challenges.![image](https://user-images.githubusercontent.com/89052586/140441226-41e4742e-3079-4bf9-bceb-6d43de5b6e34.png)
+
+Was able to install some module packages DONE
+
