@@ -6,7 +6,7 @@ The purpose of this project is to be able to apply software to existing dental r
 
 Why the project is useful:
 
-This project can help underserved populations reach preventitive and diagnostic services more regularly without needing the exam by a dentist unless it is truly needed. 
+This project can help underserved populations reach preventitive and diagnostic services more regularly without needing the exam by a dentist unless it is truly needed. An alert is added to the initial training process where an alert for caries or no caries detection is alerted to clinician. An outlook email window appears after evaluation for any forwarding of the radiograph to dental specialists, if needed.
 
 How users can get started with the project:
 
