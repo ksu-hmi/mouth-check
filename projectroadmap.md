@@ -22,3 +22,4 @@ Pillow
 albumentations
 scikit-learn   DONE
 
+# Collaborating with classmate for help/test
