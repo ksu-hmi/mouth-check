@@ -23,3 +23,7 @@ albumentations
 scikit-learn   DONE
 
 # Collaborating with classmate for help/test
+
+# Sought Help/Direction from Dr. Thomas 
+
+# Translated autoPredictSimple.py to English
