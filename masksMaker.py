@@ -25,7 +25,8 @@ dataDf = []
 with open(labels) as json_file:
     data = json.load(json_file)
 
-    # Pour chaque radio
+    # Pour chaque radio 
+    #For each radiograph
     for id, currentImg in tqdm(enumerate(os.listdir(dirImgSrc)), "Conversion : ", total=len(os.listdir(dirImgSrc))):
         currentImgPath = os.path.join(dirImgSrc, currentImg)
         currentMask = currentImg.split('.')[0]
@@ -35,10 +36,12 @@ with open(labels) as json_file:
         width, height = im.size
 
         # METHODE CREER MASK V1
+        # METHOD CREATE MASK V1
         mask = np.zeros(shape=(height, width), dtype=np.uint8)
 
 
         # Pour chaque carrie dans une radio
+        # For each cary in a radio
         for item in data[currentImg]:
             # points de type polygon ou autre
             if (item['type'] == "polygon"):
