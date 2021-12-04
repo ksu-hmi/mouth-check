@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import sys
-CLASSES_DEFINICATION_PATH = 'data\\label\\classes.json'
+CLASSES_DEFINICATION_PATH = 'C:\Users\megan\OneDrive\Desktop\Originals\vott-json-export'
 #below is using json file to interchange data
 def pairwise(it):
     it = iter(it)
