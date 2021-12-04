@@ -7,12 +7,15 @@ import time
 import sys
 
 from utils import isMulticlassDataset
-
+#A new file will be created under ./data/label/dataset.csv. It contains couples (X, Y) which will be consumed to train our neural network. It represents your dataset in text format.
+#For each x-ray, its mask is associated with it.
 
 class DatasetLoader(keras.utils.Sequence):
     """
     Generateur custom pour charger, transformer et envoyer au DNN
     """
+    #Custom generator to load, transform and send to DNN
+
 
     def __init__(self, data, xLabel, yLabel, batchSize=2, shuffle=True, targetSize=(256, 256), nClass=1):
         self.xData = data[xLabel]
@@ -50,6 +53,9 @@ class DatasetLoader(keras.utils.Sequence):
         """
 
         # Genere batchSize nombre d'ID de row de DATA (batchSize=2, [0,1])
+        # Genere batchSize DATA row ID number (batchSize=2, [0,1])
+
+
         currentBatchIdsRow = self.indexes[index * self.batchSize:(index + 1) * self.batchSize]
 
         # Find list of IDs
@@ -65,6 +71,10 @@ class DatasetLoader(keras.utils.Sequence):
         @param currentBatchIdsRow: ID des items du batch courant à créer, correspond au id du df dataset x/y
         @return:
         """
+        #@param currentBatchIdsRow: ID of the items of the current batch to be created, corresponds to the id of the df dataset x/y
+        #@return:
+
+
 
         xTrain = np.zeros((self.batchSize, *self.targetSize, 3), dtype=np.float32)
         yTrain = np.zeros((self.batchSize, *self.targetSize, 1), dtype=np.float32)
