@@ -10,6 +10,7 @@ from visualizer import visualize
 from sklearn.metrics import confusion_matrix, plot_confusion_matrix
 import itertools
 
+
 """
 # Classe permettant de réaliser une prédiction sur une nouvelle donnée
 #Translated to English: Class used to make a prediction on new data
